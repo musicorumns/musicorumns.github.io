@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: #002E5C;
+    font-family: Roboto, Times New Roman;
+    color: #EEE;
+    font-size: 16px;
+}
+
+#boje {
+    position: fixed;
+    margin-top: -24px;
+    margin-left: 5px;
+}
+
+#plava {
+    background-color: #002E5C;
+    height: 20px;
+    width: 20px;
+}
+
+#crvena {
+    background-color: #BA1616;
+    height: 20px;
+    width: 20px;
+}
+
+#zelena {
+    background-color: #118E1B;
+    height: 20px;
+    width: 20px;
+}
+
+.logo {
+    width: 400px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nota1 {
+    animation: nota1 2s infinite;
+}
+
+.nota2 {
+    animation: nota2 2s infinite;
+}
+
+@keyframes nota1 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes nota2 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.dobrodosli {
+    border: 2px #EEE;
+    border-style: dashed none dashed none;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    padding: 5px 0px;
+    font-size: 24px;
+}
+
+.main {
+    width: 66%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#forma {
+    padding: 20px;
+    border: 5px solid #EEE;
+    display: none;
+    width: 300px;
+    height: 185px;
+    margin: 10px auto;
+    text-align: left;
+    font-size: 24px;
+}
+
+#forma select {
+    width: 150px;
+    float: right;
+    margin-top: 6px;
+}
+
+input[type=button], input[type=reset] {
+    font-size: 16px;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 94px;
+}
+
+button {
+    font-size: 16px;
+    padding: 2px;
+    margin: 10px;
+    width: 100px;
+    display: inline-block;
+}
+
+button, input[type=button], input[type=reset] {
+    background-color: transparent;
+    border: 2px solid #EEE;
+    border-radius: 5px;
+    color: #EEE;
+}
+
+.marke {
+    display: inline-block;
+    margin: 30px;
+}
+
+#logoi {
+    width: 150px;
+}

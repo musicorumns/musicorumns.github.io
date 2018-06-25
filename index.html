@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Musicorum - Guitar Shop</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="webicon.png">
+		<script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body onload="kolacic()">
+        <div id="boje">
+            <button id="plava" onclick="boja('#002E5C')"></button>
+            <button id="crvena" onclick="boja('#BA1616')"></button>
+            <button id="zelena" onclick="boja('#118E1B')"></button>
+        </div>
+        <div class="top"><a href="index.html"><img class="logo" src="logo.png"></a></div>
+        <div class="dobrodosli">
+            <p>
+                <span class="nota1">♫</span> Dobrodošli na stranicu prodavnice gitara Musicorum <span class="nota2">♫</span>
+            </p>
+        </div>
+        <div class="main">
+            <div class="forma">
+                <p>
+                    Niste sigurni koju biste gitaru uzeli? Naš upitnik Vam može pomoći da se odlučite!
+                </p>
+                <button id="button" onclick="prikazi()">Prikaži</button>
+                <form name="forma" id="forma">
+                    Marka:
+                    <select name="marka">
+                        <option value="nista">...</option>
+                        <option value="ESP">ESP</option>
+                        <option value="Ibanez">Ibanez</option>
+                        <option value="Jackson">Jackson</option>
+                    </select>
+                    <br>
+                    Telo:
+                    <select name="telo">
+                        <option value="nista">...</option>
+                        <option value="Alder">Alder</option>
+                        <option value="Basswood">Basswood</option>
+                        <option value="Mahogany">Mahogany</option>
+                    </select>
+                    <br>
+                    Vrat:
+                    <select name="vrat">
+                        <option value="nista">...</option>
+                        <option value="Mahogany">Mahogany</option>
+                        <option value="Maple">Maple</option>
+                        <option value="Combo">Combo</option>
+                    </select>
+                    <br>
+                    Fretbord:
+                    <select name="fretbord">
+                        <option value="nista">...</option>
+                        <option value="Ebony">Ebony</option>
+                        <option value="Maple">Maple</option>
+                        <option value="Rosewood">Rosewood</option>
+                    </select>
+                    <br>
+                    Broj zica:
+                    <select name="zice">
+                        <option value="nista">...</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Poništi" onclick="ponisti()">
+                    <input type="reset" value="Resetuj">
+                    <a href="#dole"><input type="button" value="Potvrdi" onclick="gitara()"></a>
+                </form>
+            </div>
+            <div class="marke">
+                <img id="logoi" src="sve.png">
+                <br>
+                <a href="#dole"><button onclick="sve()">Sve</button></a>
+            </div>
+            <div class="marke">
+                <img id="logoi" src="esp/logo.png">
+                <br>
+                <a href="#dole"><button onclick="esp()">ESP</button></a>
+            </div>
+            <div class="marke">
+                <img id="logoi" src="ibanez/logo.png">
+                <br>
+                <a href="#dole"><button onclick="ibanez()">Ibanez</button></a>
+            </div>
+            <div class="marke">
+                <img id="logoi" src="jackson/logo.png">
+                <br>
+                <a href="#dole"><button onclick="jackson()">Jackson</button></a>
+            </div>
+            <form name="sortiranje">
+                Prikaži prvo:
+                <select name="opcije" onchange="sortiraj()">
+                    <option value="nista">...</option>
+                    <option value="az">A-Ž</option>
+                    <option value="za">Ž-A</option>
+                    <option value="jeftinije">Jeftinije</option>
+                    <option value="skuplje">Skuplje</option>
+                </select>
+            </form>
+            <a name="dole"><div id="gitare"></div></a>
+        </div>
+	</body>
+</html>
